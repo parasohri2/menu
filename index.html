@@ -2,65 +2,7 @@
 <html lang="en">
 
 <head>
-    <style>
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        #ff {
-            border: 5px solid white;
-            border-radius: 5px;
-            border-style: inset;
-            margin: 10px;
-            width: 200px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        #ff img {
-            width: 100%;
-            height: 70%;
-            object-fit: cover;
-        }
-
-        .title {
-            color: rgb(0, 255, 68);
-
-            margin-left: 40vw;
-            
-        }
-        @media(max-width:720px){
-            .title {
-            color: rgb(0, 255, 68);
-
-            margin-left: 20vw;
-            
-        }
-        }
-
-        body {
-            color: white;
-            background-color: black;
-            justify-content: center;
-        }
-
-        #ff h3 {
-            text-align: center;
-            margin: 10px 0;
-        }
-
-        body {
-            color: white;
-            background-color: black;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -72,24 +14,8 @@
     <div class="content">
       
     </div>
-    <script>
-        function card(img, name, price) {
-            let a = document.createElement('div')
-            a.id = "ff";
-            //a.appendChild(`${this.image}`)
-            a.innerHTML = `<img src="${img}"> <div><h3>item name is ${name} and price is ${price}</h3></div>`
-            let bod = document.querySelector('.content')
-            bod.appendChild(a);
-            console.log("edf");
-        }
-        let d = new card('pavbhaji.jpg', 'pavbhaji', '100')
-        let e = new card('rajmachawal.jpg', 'rajmachawal', 'full- 60 , half :40')
-        let f = new card('kadhi-chawal-1.webp', 'kadhi chawal', 'full- 60 , half :40')
-        let g = new card('friedmomo.webp', 'friedmomo', 'half:45 full: 90')
-        let h = new card('steammomo.webp', 'steam momo', 'half:40 full: 80')
-        let i = new card('bananashake.webp', 'banana shake', '50 ')
-        let j = new card('chocoshake.webp', 'chocolateshake', '70')
-        let k=new card('oreoshake.webp','oreo shake','60')
+    <script src="index.js">
+         
         
     </script>
 </body>
